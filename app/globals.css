@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-jakarta);
+
+  /* Paleta do sistema */
+  --color-laranja: #f26100;
+  --color-laranja-claro: #ff8a00;
+  --color-laranja-texto: #bf4600; /* laranja com contraste para texto sobre branco */
+  --color-laranja-suave: #fff0e5;
+  --color-preto: #1a1a1a;
+  --color-grafite: #2b2b2b;
+  --color-cinza: #545454;
+  --color-borda: #e4e4e4;
+  --color-fundo: #efefef;
+  --color-ok: #14733f;
+  --color-ok-suave: #e3f4ea;
+  --color-erro: #b3261e;
+  --color-erro-suave: #fce9e7;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-fundo);
+  color: var(--color-preto);
+}
+
+/* A tabela de dinheiro alinha melhor com dígitos de largura igual. */
+.valor {
+  font-variant-numeric: tabular-nums;
+}
+
+dialog::backdrop {
+  background: rgb(26 26 26 / 0.55);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-laranja);
+  outline-offset: 2px;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+}
