@@ -7,6 +7,8 @@ resumo mensal.
 Projeto de estudo, criado com apoio de IA (Claude Code). Eu defini o problema, as regras de negócio e
 revisei cada decisão. A IA escreveu o código e os testes a partir dessas regras.
 
+**Demonstração online:** https://controle-caixa-demo.vercel.app (dados fictícios, a senha aparece na tela de login)
+
 ## Telas
 
 ![Caixa do dia](docs/caixa-do-dia.png)
@@ -65,7 +67,7 @@ npm test
 
 ## Demonstração online
 
-Com `NEXT_PUBLIC_DEMO=1`, a tela de login mostra o acesso de exemplo. `npm run demo` cria as tabelas, define o
+A demonstração está em https://controle-caixa-demo.vercel.app. Com `NEXT_PUBLIC_DEMO=1`, a tela de login mostra o acesso de exemplo. `npm run demo` cria as tabelas, define o
 acesso de exemplo e carrega 40 dias de dados fictícios. O comando apaga os lançamentos do banco, então ele
 recusa qualquer banco que já tenha outro acesso cadastrado.
 
