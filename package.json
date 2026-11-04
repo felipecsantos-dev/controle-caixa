@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "tsx --test lib/*.test.ts",
-    "preparar": "tsx --env-file-if-exists=.env.local scripts/preparar.ts"
+    "preparar": "tsx --env-file-if-exists=.env.local scripts/preparar.ts",
+    "demo": "tsx --env-file-if-exists=.env.local scripts/demo.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
